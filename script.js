@@ -292,6 +292,12 @@ let listOfItem = {
     cost: 3000,
     img: "./assets/img/item48.png",
     stats: "23",
+    },
+  "Horizon Focus": {
+    name: "Horizon Focus",
+    cost: 3000,
+    img: "./assets/img/item49.png",
+    stats: "ae#",
   }
 };
 
@@ -328,6 +334,7 @@ let suggestions = [
   "Guinsoo's Rageblade",
   "Hextech Rocketbelt",
   "Heartsteel",
+  "Horizon Focus",
   "Iceborn Gauntlet",
   "Immortal Shieldbow",
   "Imperial Mandate",
