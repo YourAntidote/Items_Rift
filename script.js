@@ -1,27 +1,33 @@
 let listOfItem = {
-  "Kraken Slayer": {
-    name: "Kraken Slayer",
-    cost: 3400,
-    img: "./assets/img/item0.png",
-    stats: "123",
+  "Guinsoo's Rageblade": {
+    name: "Guinsoo's Rageblade",
+    cost: 3200,
+    img: "./assets/img/item00.png",
+    stats: "124ad",
+    },
+  "Crown of the Shattered Queen": {
+    name: "Crown of the Shattered Queen",
+    cost: 2800,
+    img: "./assets/img/item00.png",
+    stats: "ace#$",
   },
   "Galeforce": {
     name: "Galeforce",
     cost: 3400,
-    img: "./assets/img/item1.png",
+    img: "./assets/img/item01.png",
     stats: "123$",
   },
-  "Immortal Shieldbow": {
-    name: "Immortal Shieldbow",
-    cost: 3400,
-    img: "./assets/img/item2.png",
-    stats: "1235#",
+  "Echoes of Helia": {
+    name: "Echoes of Helia",
+    cost: 2300,
+    img: "./assets/img/item04.png",
+    stats: "ace#",
   },
   "Eclipse": {
     name: "Eclipse",
     cost: 3100,
-    img: "./assets/img/item3.png",
-    stats: "145$",
+    img: "./assets/img/item03.png",
+    stats: "14e$",
   },
   "Prowler's Claw": {
     name: "Prowler's Claw",
@@ -31,37 +37,31 @@ let listOfItem = {
   },
   "Moonstone Renewer": {
     name: "Moonstone Renewer",
-    cost: 2500,
-    img: "./assets/img/item5.png",
+    cost: 2300,
+    img: "./assets/img/item05.png",
     stats: "ace#",
   },
   "Duskblade of Draktharr": {
     name: "Duskblade of Draktharr",
     cost: 3100,
-    img: "./assets/img/item6.png",
+    img: "./assets/img/item06.png",
     stats: "14e$",
-  },
-  "Crown of the Shattered Queen": {
-    name: "Crown of the Shattered Queen",
-    cost: 2800,
-    img: "./assets/img/item7.png",
-    stats: "abe#$",
   },
   "Divine Sunderer": {
     name: "Divine Sunderer",
     cost: 3300,
-    img: "./assets/img/item8.png",
+    img: "./assets/img/item08.png",
     stats: "14de#",
   },
   "Trinity Force": {
     name: "Trinity Force",
     cost: 3333,
-    img: "./assets/img/item9.png",
+    img: "./assets/img/item09.png",
     stats: "12e#$",
   },
   "Goredrinker": {
     name: "Goredrinker",
-    cost: 3300,
+    cost: 3200,
     img: "./assets/img/item10.png",
     stats: "15e#",
   },
@@ -79,13 +79,13 @@ let listOfItem = {
   },
   "Radiant Virtue": {
     name: "Radiant Virtue",
-    cost: 3000,
+    cost: 2700,
     img: "./assets/img/item13.png",
     stats: "e#?%",
   },
   "Jak'Sho, The Protean": {
     name: "Jak'Sho, The Protean",
-    cost: 3000,
+    cost: 3200,
     img: "./assets/img/item14.png",
     stats: "e#?%",
   },
@@ -127,19 +127,19 @@ let listOfItem = {
   },
   "Evenshroud": {
     name: "Evenshroud",
-    cost: 2500,
+    cost: 2300,
     img: "./assets/img/item21.png",
     stats: "e#?%",
   },
   "Locket of the Iron Solari": {
     name: "Locket of the Iron Solari",
-    cost: 2500,
+    cost: 2300,
     img: "./assets/img/item22.png",
     stats: "e#?%",
   },
   "Shurelya's Battlesong": {
     name: "Shurelya's Battlesong",
-    cost: 2500,
+    cost: 2300,
     img: "./assets/img/item23.png",
     stats: "ace#",
   },
@@ -157,15 +157,15 @@ let listOfItem = {
   },
   "Rod of Ages": {
     name: "Rod of Ages",
-    cost: 3200,
+    cost: 2800,
     img: "./assets/img/item26.png",
-    stats: "ab#",
+    stats: "abe#",
   },
   "Abyssal Mask": {
     name: "Abyssal Mask",
-    cost: 3000,
-    img: "./assets/img/item27.png",
-    stats: "be#%",
+    cost: 2400,
+    img: "./assets/img/item44.png",
+    stats: "e#%",
   },
   "Anathema's Chains": {
     name: "Anathema's Chains",
@@ -175,15 +175,15 @@ let listOfItem = {
   },
   "Archangel's Staff": {
     name: "Archangel's Staff",
-    cost: 2600,
+    cost: 3000,
     img: "./assets/img/item29.png",
-    stats: "ab#",
+    stats: "abe#",
   },
   "Ardent Censer": {
     name: "Ardent Censer",
-    cost: 2300,
+    cost: 2100,
     img: "./assets/img/item30.png",
-    stats: "ac",
+    stats: "ac$",
   },
   "Axiom Arc": {
     name: "Axiom Arc",
@@ -223,7 +223,7 @@ let listOfItem = {
   },
   "Chemtech Putrifier": {
     name: "Chemtech Putrifier",
-    cost: 2300,
+    cost: 2100,
     img: "./assets/img/item37.png",
     stats: "ace",
   },
@@ -231,7 +231,7 @@ let listOfItem = {
     name: "Cosmic Drive",
     cost: 3000,
     img: "./assets/img/item38.png",
-    stats: "ae#$",
+    stats: "ae$",
   },
   "Dead Man's Plate": {
     name: "Dead Man's Plate",
@@ -287,17 +287,35 @@ let listOfItem = {
     img: "./assets/img/item47.png",
     stats: "1?",
   },
-  "Guinsoo's Rageblade": {
-    name: "Guinsoo's Rageblade",
-    cost: 3000,
-    img: "./assets/img/item48.png",
-    stats: "23",
-    },
   "Horizon Focus": {
     name: "Horizon Focus",
     cost: 3000,
     img: "./assets/img/item49.png",
     stats: "ae#",
+  },
+  "Immortal Shieldbow": {
+    name: "Immortal Shieldbow",
+    cost: 3400,
+    img: "./assets/img/item2.png",
+    stats: "1235#",
+  },
+  "Infinity Edge": {
+    name: "Infinity Edge",
+    cost: 3000,
+    img: "./assets/img/item27.png",
+    stats: "13",
+  },
+  "Navori Quickblades": {
+    name: "Navori Quickblades",
+    cost: 3400,
+    img: "./assets/img/item2.png",
+    stats: "13e",
+  },
+  "Youmuu's Ghostblade": {
+    name: "Youmuu's Ghostblade",
+    cost: 3100,
+    img: "./assets/img/item02.png",
+    stats: "14e",
   }
 };
 
@@ -488,13 +506,13 @@ hint.addEventListener("click", function () {
 });
 
 let chiffre = [
-  2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400, 3500,
+  2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400, 3500,
   3600,
 ];
 //--------------Aléatoire prix MAUVAIS---------------//
 function aleatoirMauvais() {
   chiffre = [
-    2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400,
+    2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400,
     3500, 3600,
   ];
 
