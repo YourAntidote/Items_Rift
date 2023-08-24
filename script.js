@@ -382,13 +382,20 @@ let statsItem = listOfItem[objetRandom]["stats"];
 let switch_value = false;
 let option_value = optionBtn.checked;
 let body = document.querySelector('body');
-
+let exit_screen = document.querySelector('.exit_screen'); 
 
 optionBtn.addEventListener('change', function(){
     ui_option.classList.toggle('none');
+    exit_screen.classList.toggle('none');
     console.log(option_value);
+
 })
 
+exit_screen.addEventListener('click', function(){
+  exit_screen.classList.toggle('none');
+  optionBtn.checked = false;
+  ui_option.classList.toggle('none');
+})
 
 switch_input.addEventListener('change', function(){
   if (switch_value == false){
