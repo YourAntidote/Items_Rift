@@ -4,7 +4,7 @@ let listOfItem = {
     cost: 3200,
     img: "./assets/img/item00.png",
     stats: "124ad",
-    },
+  },
   "Crown of the Shattered Queen": {
     name: "Crown of the Shattered Queen",
     cost: 2800,
@@ -321,31 +321,13 @@ let listOfItem = {
     name: "Hullbreaker",
     cost: 3000,
     img: "./assets/img/item51.png",
-    stats: "1#!?$",
+    stats: "1#!$",
   },
   "Knight's Vow": {
     name: "Knight's Vow",
     cost: 2200,
     img: "./assets/img/item52.png",
-    stats: "1#!?$",
-  },
-  "Hullbreaker": {
-    name: "Hullbreaker",
-    cost: 2000,
-    img: "./assets/img/item51.png",
-    stats: "1#!?$",
-  },
-  "Hullbreaker": {
-    name: "Hullbreaker",
-    cost: 3000,
-    img: "./assets/img/item51.png",
-    stats: "1#!?$",
-  },
-  "Hullbreaker": {
-    name: "Hullbreaker",
-    cost: 3000,
-    img: "./assets/img/item51.png",
-    stats: "1#!?$",
+    stats: "e#!?",
   }
 };
 
@@ -442,7 +424,7 @@ let suggestions = [
   "Wit's End",
   "Youmuu's Ghostblade",
   "Zeke's Convergence",
-  "Zhonya's Hourglass"
+  "Zhonya's Hourglass",
 ];
 
 
@@ -470,7 +452,7 @@ let checkHTML = document.querySelectorAll(".check");
 let nomItem = listOfItem[objetRandom]["name"];
 let valeurEntree = document.querySelector(".entree");
 let statsItem = listOfItem[objetRandom]["stats"];
-let switch_value = false;
+let switch_value = true;
 let option_value = optionBtn.checked;
 let body = document.querySelector('body');
 let exit_screen = document.querySelector('.exit_screen'); 
@@ -568,26 +550,19 @@ hint.addEventListener("click", function () {
   });
 
   if (valeurEntree.value !== nomItem) {
-    alert(
-      "HINT: The name starts with the letter " + nomItem.charAt(0).toUpperCase()
-    );
+    alert("HINT: The name starts with the letter " + nomItem.charAt(0).toUpperCase());
   } else if (hintPrice == false) {
     alert("HINT: The second number of the price is " + num);
   } else {
     alert("HINT: there is " + statsItem.length + " stats");
   }
 });
-
-let chiffre = [
-  2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400, 3500,
-  3600,
-];
 //--------------Aléatoire prix MAUVAIS---------------//
+
+let chiffre = [2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400, 3500];
+
 function aleatoirMauvais() {
-  chiffre = [
-    2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400,
-    3500, 3600,
-  ];
+  chiffre = [2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400, 3500];
 
   chiffre.forEach(function (nombre, j) {
     if (chiffre[j] == coutItem) {
@@ -627,11 +602,8 @@ function aleatoirMauvais() {
 //--------Aléatoire prix réponse emplacement---------//
 function aleatoirBon() {
   let quatreMath = Math.random();
-
   let quatreRatio = quatreMath * 3;
-
   let quatreRound = Math.round(quatreRatio);
-
   priceHTML[quatreRound].innerText = coutItem;
 }
 //--------Aléatoire prix réponse emplacement---------//
@@ -752,105 +724,5 @@ function showSuggestions(list) {
   suggBox.innerHTML = listData;
 }
 
-
-
 aleatoirMauvais();
 aleatoirBon();
-
-
-/*
-  "Abyssal Mask",
-  "Anathema's Chains",
-  "Archangel's Staff",
-  "Ardent Censer",
-  "Axiom Arc",
-  "Banshee's Veil",
-  "Black Cleaver",
-  "Blade of the Ruined King",
-  "Bloodthirster",
-  "Chempunk Chainsword",
-  "Chemtech Putrifier",
-  "Cosmic Drive",
-  "Crown of the Shattered Queen",
-  "Dead Man's Plate",
-  "Death's Dance",
-  "Demonic Embrace",
-  "Divine Sunderer",
-  "Duskblade of Draktharr",
-  "Eclipse",
-  "Edge of Night",
-  "Essence Reaver",
-  "Evenshroud",
-  "Everfrost",
-  "Force of Nature",
-  "Frozen Heart",
-  "Galeforce",
-  "Gargoyle Stoneplate",
-  "Goredrinker",
-  "Guardian Angel",
-  "Guinsoo's Rageblade",
-  "Hextech Rocketbelt",
-  "Heartsteel",
-  "Horizon Focus",
-  "Hullbreaker",
-  "Iceborn Gauntlet",
-  "Immortal Shieldbow",
-  "Imperial Mandate",
-  "Infinity Edge",
-  "Jak'Sho, The Protean",
-  "Knight's Vow",
-  "Kraken Slayer",
-  "Liandry's Anguish",
-  "Lich Bane",
-  "Locket of the Iron Solari",
-  "Lord Dominik's Regards",
-  "Luden's Tempest",
-  "Manamune",
-  "Maw of Malmortius",
-  "Mercurial Scimitar",
-  "Mikael's Blessing",
-  "Moonstone Renewer",
-  "Morellonomicon",
-  "Mortal Reminder",
-  "Nashor's Tooth",
-  "Navori Quickblades",
-  "Night Harvester",
-  "Phantom Dancer",
-  "Prowler's Claw",
-  "Rabadon's Deathcap",
-  "Radiant Virtue",
-  "Randuin's Omen",
-  "Rapid Firecannon",
-  "Ravenous Hydra",
-  "Redemption",
-  "Riftmaker",
-  "Rod of Ages",
-  "Runaan's Hurricane",
-  "Rylai's Crystal Scepter",
-  "Shurelya's Battlesong",
-  "Serpent's Fang",
-  "Serylda's Grudge",
-  "Shadowflame",
-  "Silvermere Dawn",
-  "Spear of Shojin",
-  "Spirit Visage",
-  "Staff of Flowing Water",
-  "Sterak's Gage",
-  "Stormrazor",
-  "Stridebreaker",
-  "Sunfire Aegis",
-  "The Collector",
-  "Thornmail",
-  "Titanic Hydra",
-  "Trinity Force",
-  "Turbo Chemtank",
-  "Umbral Glaive",
-  "Void Staff",
-  "Warmog's Armor",
-  "Winter's Approach",
-  "Wit's End",
-  "Youmuu's Ghostblade",
-  "Zeke's Convergence",
-  "Zhonya's Hourglass",
-];
-*/
