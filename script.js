@@ -346,7 +346,7 @@ let listOfItem = {
     cost: 3000,
     img: "./assets/img/item51.png",
     stats: "1#!?$",
-  },
+  }
 };
 
 let suggestions = [
@@ -442,7 +442,7 @@ let suggestions = [
   "Wit's End",
   "Youmuu's Ghostblade",
   "Zeke's Convergence",
-  "Zhonya's Hourglass",
+  "Zhonya's Hourglass"
 ];
 
 
