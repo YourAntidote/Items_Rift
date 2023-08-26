@@ -327,7 +327,7 @@ let listOfItem = {
     name: "Knight's Vow",
     cost: 2200,
     img: "./assets/img/item52.png",
-    stats: "e#!?",
+    stats: "e#!?$",
   }
 };
 
