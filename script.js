@@ -8,7 +8,7 @@ let listOfItem = {
   "Crown of the Shattered Queen": {
     name: "Crown of the Shattered Queen",
     cost: 2800,
-    img: "./assets/img/item00.png",
+    img: "./assets/img/item07.png",
     stats: "ace#$",
   },
   "Galeforce": {
@@ -32,7 +32,7 @@ let listOfItem = {
   "Prowler's Claw": {
     name: "Prowler's Claw",
     cost: 3100,
-    img: "./assets/img/item4.png",
+    img: "./assets/img/item67.png",
     stats: "14e$",
   },
   "Moonstone Renewer": {
@@ -201,7 +201,7 @@ let listOfItem = {
     name: "Black Cleaver",
     cost: 3100,
     img: "./assets/img/item33.png",
-    stats: "ae#",
+    stats: "1e#",
   },
   "Blade of the Ruined King": {
     name: "Blade of the Ruined King",
@@ -308,7 +308,7 @@ let listOfItem = {
   "Navori Quickblades": {
     name: "Navori Quickblades",
     cost: 3400,
-    img: "./assets/img/item2.png",
+    img: "./assets/img/item49.png",
     stats: "13e",
   },
   "Youmuu's Ghostblade": {
@@ -328,8 +328,261 @@ let listOfItem = {
     cost: 2200,
     img: "./assets/img/item52.png",
     stats: "e#!?$",
+  },
+  "Kraken Slayer": {
+    name: "Kraken Slayer",
+    cost: 3000,
+    img: "./assets/img/item54.png",
+    stats: "123",
+  },
+  "Lich Bane": {
+    name: "Lich Bane",
+    cost: 3000,
+    img: "./assets/img/item53.png",
+    stats: "ae$",
+  },
+  "Lord Dominik's Regards": {
+    name: "Lord Dominik's Regards",
+    cost: 3000,
+    img: "./assets/img/item57.png",
+    stats: "134",
+  },
+  "Manamune": {
+    name: "Manamune",
+    cost: 2900,
+    img: "./assets/img/item59.png",
+    stats: "1be",
+  },
+  "Maw of Malmortius": {
+    name: "Maw of Malmortius",
+    cost: 2800,
+    img: "./assets/img/item60.png",
+    stats: "1%",
+  },
+  "Mercurial Scimitar": {
+    name: "Mercurial Scimitar",
+    cost: 3000,
+    img: "./assets/img/item61.png",
+    stats: "13%",
+  },
+  "Mikael's Blessing": {
+    name: "Mikael's Blessing",
+    cost: 2300,
+    img: "./assets/img/item62.png",
+    stats: "3#",
+  },
+  "Mortal Reminder": {
+    name: "Mortal Reminder",
+    cost: 3000,
+    img: "./assets/img/item58.png",
+    stats: "134",
+  },
+  "Nashor's Tooth": {
+    name: "Nashor's Tooth",
+    cost: 3200,
+    img: "./assets/img/item65.png",
+    stats: "2ae",
+  },
+  "Phantom Dancer": {
+    name: "Phantom Dancer",
+    cost: 2800,
+    img: "./assets/img/item66.png",
+    stats: "123$",
+  },
+  "Prowler's Claw": {
+    name: "Prowler's Claw",
+    cost: 3000,
+    img: "./assets/img/item67.png",
+    stats: "14e",
+  },
+  "Rabadon's Deathcap": {
+    name: "Rabadon's Deathcap",
+    cost: 3600,
+    img: "./assets/img/item68.png",
+    stats: "a",
+  },
+  "Randuin's Omen": {
+    name: "Randuin's Omen",
+    cost: 3000,
+    img: "./assets/img/item69.png",
+    stats: "#?",
+  },
+  "Rapid Firecannon": {
+    name: "Rapid Firecannon",
+    cost: 3000,
+    img: "./assets/img/item70.png",
+    stats: "123$",
+  },
+  "Ravenous Hydra": {
+    name: "Ravenous Hydra",
+    cost: 3400,
+    img: "./assets/img/item71.png",
+    stats: "15e",
+  },
+  "Redemption": {
+    name: "Redemption",
+    cost: 2300,
+    img: "./assets/img/item72.png",
+    stats: "3#",
+  },
+  "Runaan's Hurricane": {
+    name: "Runaan's Hurricane",
+    cost: 2800,
+    img: "./assets/img/item73.png",
+    stats: "23$",
+  },
+  "Rylai's Crystal Scepter": {
+    name: "Rylai's Crystal Scepter",
+    cost: 2600,
+    img: "./assets/img/item74.png",
+    stats: "a#",
+  },
+  "Serpent's Fang": {
+    name: "Serpent's Fang",
+    cost: 2600,
+    img: "./assets/img/item76.png",
+    stats: "14",
+  },
+  "Serylda's Grudge": {
+    name: "Serylda's Grudge",
+    cost: 3200,
+    img: "./assets/img/item77.png",
+    stats: "14e",
+  },
+  "Shadowflame": {
+    name: "Shadowflame",
+    cost: 3000,
+    img: "./assets/img/item78.png",
+    stats: "a#",
+  },
+  "Silvermere Dawn": {
+    name: "Silvermere Dawn",
+    cost: 3000,
+    img: "./assets/img/item79.png",
+    stats: "1#%",
+  },
+    "Spear of Shojin": {
+    name: "Spear of Shojin",
+    cost: 3300,
+    img: "./assets/img/item80.png",
+    stats: "1e#",
+  },
+  "Spirit Visage": {
+    name: "Spirit Visage",
+    cost: 2900,
+    img: "./assets/img/item81.png",
+    stats: "e#!%",
+  },
+  "Staff of Flowing Water": {
+    name: "Staff of Flowing Water",
+    cost: 2100,
+    img: "./assets/img/item82.png",
+    stats: "ac$",
+  },
+  "Statikk Shiv": {
+    name: "Statikk Shiv",
+    cost: 3000,
+    img: "./assets/img/item83.png",
+    stats: "123",
+  },
+  "Sterak's Gage": {
+    name: "Sterak's Gage",
+    cost: 3000,
+    img: "./assets/img/item84.png",
+    stats: "#",
+  },
+  "Stormrazor": {
+    name: "Stormrazor",
+    cost: 3000,
+    img: "./assets/img/item85.png",
+    stats: "123",
+  },
+  "Sunfire Aegis": {
+    name: "Sunfire Aegis",
+    cost: 3000,
+    img: "./assets/img/item86.png",
+    stats: "#?",
+  },
+  "The Collector": {
+    name: "The Collector",
+    cost: 3000,
+    img: "./assets/img/item87.png",
+    stats: "134",
+  },
+  "Thornmail": {
+    name: "Thornmail",
+    cost: 2700,
+    img: "./assets/img/item88.png",
+    stats: "#?",
+  },
+  "Titanic Hydra": {
+    name: "Titanic Hydra",
+    cost: 3300,
+    img: "./assets/img/item89.png",
+    stats: "1#",
+  },
+  "Turbo Chemtank": {
+    name: "Turbo Chemtank",
+    cost: 2800,
+    img: "./assets/img/item90.png",
+    stats: "e#%",
+  },
+  "Umbral Glaive": {
+    name: "Umbral Glaive",
+    cost: 2300,
+    img: "./assets/img/item91.png",
+    stats: "14e",
+  },
+  "Vigilant Wardstone": {
+    name: "Vigilant Wardstone",
+    cost: 2300,
+    img: "./assets/img/item92.png",
+    stats: "e#!",
+  },
+  "Void Staff": {
+    name: "Void Staff",
+    cost: 2800,
+    img: "./assets/img/item93.png",
+    stats: "ad",
+  },
+  "Warmog's Armor": {
+    name: "Warmog's Armor",
+    cost: 3000,
+    img: "./assets/img/item94.png",
+    stats: "e#!",
+  },
+  "Winter's Approach": {
+    name: "Winter's Approach",
+    cost: 2600,
+    img: "./assets/img/item95.png",
+    stats: "be#",
+  },
+  "Wit's End": {
+    name: "Wit's End",
+    cost: 3200,
+    img: "./assets/img/item64.png",
+    stats: "13%",
+  },
+  "Zeke's Convergence": {
+    name: "Zeke's Convergence",
+    cost: 2200,
+    img: "./assets/img/item56.png",
+    stats: "be#!",
+  },
+  "Zhonya's Hourglass": {
+    name: "Zhonya's Hourglass",
+    cost: 3000,
+    img: "./assets/img/item96.png",
+    stats: "ae?",
+  },
+  "Morellonomicon": {
+    name: "Morellonomicon",
+    cost: 3000,
+    img: "./assets/img/item63.png",
+    stats: "ad#",
   }
-};
+}
+
 
 let suggestions = [
   "Abyssal Mask",
@@ -350,6 +603,7 @@ let suggestions = [
   "Demonic Embrace",
   "Divine Sunderer",
   "Duskblade of Draktharr",
+  "Echoes of Helia",
   "Eclipse",
   "Edge of Night",
   "Essence Reaver",
@@ -408,6 +662,7 @@ let suggestions = [
   "Spear of Shojin",
   "Spirit Visage",
   "Staff of Flowing Water",
+  "Statikk Shiv",
   "Sterak's Gage",
   "Stormrazor",
   "Stridebreaker",
@@ -419,23 +674,23 @@ let suggestions = [
   "Turbo Chemtank",
   "Umbral Glaive",
   "Void Staff",
+  "Vigilant Wardstone",
   "Warmog's Armor",
   "Winter's Approach",
   "Wit's End",
   "Youmuu's Ghostblade",
   "Zeke's Convergence",
   "Zhonya's Hourglass",
-];
-
+]
 
 let ui_option = document.querySelector('.ui_option');
 let optionBtn = document.getElementById('options');  
 let switch_input = document.querySelector('.switch_input');
-let listItem = suggestions.length - 1;  
-let mathObject = Math.random();
-let ratioItem = mathObject * listItem;
-let numObjRandom = Math.round(ratioItem);
-let objetRandom = suggestions[numObjRandom];
+let listItem = suggestions.length - 1;                                    //Récupère le nombre d'items possible 
+let mathObject = Math.random();                                       //Génère un random
+let ratioItem = mathObject * listItem;                                //Multiplie le random par le nombre d'item
+let numObjRandom = Math.round(ratioItem);                             //Arrondie le nombre qui a été multiplié 
+let objetRandom = suggestions[numObjRandom];                          //Sélectionne le nom de l'item dans la liste à son numéro
 let coutItem = listOfItem[objetRandom]["cost"];
 let bouton = document.querySelector(".btn");
 let radioHTML = document.querySelectorAll(".box");
@@ -559,10 +814,10 @@ hint.addEventListener("click", function () {
 });
 //--------------Aléatoire prix MAUVAIS---------------//
 
-let chiffre = [2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400, 3500];
+let chiffre = [2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400, 3500, 3600, 3700];
 
 function aleatoirMauvais() {
-  chiffre = [2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400, 3500];
+  chiffre = [2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3333, 3300, 3400, 3500, 3600, 3700];
 
   chiffre.forEach(function (nombre, j) {
     if (chiffre[j] == coutItem) {
@@ -634,11 +889,110 @@ let interrogation = document.querySelector('.interrogation');
 let option_image = document.querySelector('.option_image');
 next.addEventListener("click", function () {
 
-  console.log(listItem);
+  console.log("Il reste " + listItem);
   victory.classList.add("none");
   victory2.classList.add("none");
   body.classList.remove("win");
   if (listItem == 0){
+    suggestions = [
+      "Abyssal Mask",
+      "Anathema's Chains",
+      "Archangel's Staff",
+      "Ardent Censer",
+      "Axiom Arc",
+      "Banshee's Veil",
+      "Black Cleaver",
+      "Blade of the Ruined King",
+      "Bloodthirster",
+      "Chempunk Chainsword",
+      "Chemtech Putrifier",
+      "Cosmic Drive",
+      "Crown of the Shattered Queen",
+      "Dead Man's Plate",
+      "Death's Dance",
+      "Demonic Embrace",
+      "Divine Sunderer",
+      "Duskblade of Draktharr",
+      "Echoes of Helia",
+      "Eclipse",
+      "Edge of Night",
+      "Essence Reaver",
+      "Evenshroud",
+      "Everfrost",
+      "Force of Nature",
+      "Frozen Heart",
+      "Galeforce",
+      "Gargoyle Stoneplate",
+      "Goredrinker",
+      "Guardian Angel",
+      "Guinsoo's Rageblade",
+      "Hextech Rocketbelt",
+      "Heartsteel",
+      "Horizon Focus",
+      "Hullbreaker",
+      "Iceborn Gauntlet",
+      "Immortal Shieldbow",
+      "Imperial Mandate",
+      "Infinity Edge",
+      "Jak'Sho, The Protean",
+      "Knight's Vow",
+      "Kraken Slayer",
+      "Liandry's Anguish",
+      "Lich Bane",
+      "Locket of the Iron Solari",
+      "Lord Dominik's Regards",
+      "Luden's Tempest",
+      "Manamune",
+      "Maw of Malmortius",
+      "Mercurial Scimitar",
+      "Mikael's Blessing",
+      "Moonstone Renewer",
+      "Morellonomicon",
+      "Mortal Reminder",
+      "Nashor's Tooth",
+      "Navori Quickblades",
+      "Night Harvester",
+      "Phantom Dancer",
+      "Prowler's Claw",
+      "Rabadon's Deathcap",
+      "Radiant Virtue",
+      "Randuin's Omen",
+      "Rapid Firecannon",
+      "Ravenous Hydra",
+      "Redemption",
+      "Riftmaker",
+      "Rod of Ages",
+      "Runaan's Hurricane",
+      "Rylai's Crystal Scepter",
+      "Shurelya's Battlesong",
+      "Serpent's Fang",
+      "Serylda's Grudge",
+      "Shadowflame",
+      "Silvermere Dawn",
+      "Spear of Shojin",
+      "Spirit Visage",
+      "Staff of Flowing Water",
+      "Statikk Shiv",
+      "Sterak's Gage",
+      "Stormrazor",
+      "Stridebreaker",
+      "Sunfire Aegis",
+      "The Collector",
+      "Thornmail",
+      "Titanic Hydra",
+      "Trinity Force",
+      "Turbo Chemtank",
+      "Umbral Glaive",
+      "Void Staff",
+      "Vigilant Wardstone",
+      "Warmog's Armor",
+      "Winter's Approach",
+      "Wit's End",
+      "Youmuu's Ghostblade",
+      "Zeke's Convergence",
+      "Zhonya's Hourglass",
+    ];
+    next.innerText = "Restart?";
     gg.classList.remove("none");
     boxPrix.classList.add("none");
     imgHTML.classList.add("none");
@@ -647,14 +1001,26 @@ next.addEventListener("click", function () {
     interrogation.classList.add("none");
     option_image.classList.add('none');
   } else {
-
+    boxPrix.classList.remove("animation");
+    statsBox.classList.remove("animation");  
+    valeurEntree.classList.remove("animation");
+    next.innerText = "Next";
+    gg.classList.add("none");
+    boxPrix.classList.remove("none");
+    imgHTML.classList.remove("none");
+    statsBox.classList.remove("none");
+    valeurEntree.classList.remove("none");
+    interrogation.classList.remove("none");
+    option_image.classList.remove('none');
     suggestions.splice(numObjRandom, 1);
   }    
   listItem = suggestions.length - 1;
   mathObject = Math.random();
   ratioItem = mathObject * listItem;
   numObjRandom = Math.round(ratioItem);
-  objetRandom = suggestions[numObjRandom];
+  console.log("1 - " + numObjRandom);                                       //1
+  objetRandom = suggestions[numObjRandom];                                  
+  console.log("2 - " + objetRandom);                                        //3
 
   radioHTML.forEach(function (item, i) {
     radioHTML[i].checked = false;
@@ -668,15 +1034,20 @@ next.addEventListener("click", function () {
   hintPrice = 0;
   prenom = false;
   cout = false;
-
+  console.log("3.1 - " + coutItem);                                           //4
   coutItem = listOfItem[objetRandom]["cost"];
+  console.log("3 - " + coutItem);                                           //4
   imageItem = listOfItem[objetRandom]["img"];
+  console.log("4 - " + imageItem);
   nomItem = listOfItem[objetRandom]["name"];
+  console.log("5 - " + nomItem);
   statsItem = listOfItem[objetRandom]["stats"];
   imgHTML.src = imageItem;
   aleatoirMauvais();
   aleatoirBon();
 });
+
+
  
 
 //-------------------SearchBox--------------------------//
@@ -723,6 +1094,8 @@ function showSuggestions(list) {
   }
   suggBox.innerHTML = listData;
 }
+let video = document.querySelector(".video")
+
 
 aleatoirMauvais();
 aleatoirBon();

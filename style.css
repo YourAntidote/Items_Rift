@@ -2,17 +2,25 @@
   font-family: "Friz_Quadrata_Bold";
   src: url(./assets/font/Friz_Quadrata_Bold.otf) format("opentype");
 }
+@font-face {
+  font-family: "Beaufort";
+  src: url(./assets/font/BeaufortforLOL-HeavyItalic.ttf) format("opentype");
+}
+@font-face {
+  font-family: "Beaufort-bold";
+  src: url(./assets/font/BeaufortforLOL-Bold.ttf) format("opentype");
+}
+
 :root {
   --main-bg-color: rgb(30, 35, 40, 0.90 );
 }
 
 html {
   height: 100%;
-  background-image: url(./assets/background.jpg);
-  background-repeat: no-repeat;
+  background-image: url(./assets/img/background1.png);
   background-size: cover;
-  object-position: 50% 10%;
-
+  background-repeat: no-repeat;
+  object-position: 50% 100%;
 }
 body {
   height: 100%;
@@ -22,6 +30,15 @@ body {
   flex-direction: column;
   margin: 0px;
   overflow: hidden;
+
+}
+.bgc_noir{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  z-index: -2;
+  filter: opacity(70%);
 }
 .victory{
   background-blend-mode: multiply;
@@ -33,7 +50,7 @@ body {
   height: 45vh;
   max-height: 615px;
   min-height: 550px;
-  background-color: var(--main-bg-color);
+
   border: 2px solid #af9767;
   display: flex;
   justify-content: space-evenly;
@@ -41,17 +58,28 @@ body {
   flex-direction: column;
   min-width: 720px;
   position: relative;
-  box-shadow: 0px 0px 20px 2px #000;
+  /*box-shadow: 0px 0px 20px 2px #000; */
+  overflow: hidden;
 }
-
+video{
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+  transform-origin: center center;
+  z-index: -1;
+  transform: scale(1.5);
+  opacity: 0.8;
+}
 h1 {
   margin: 0px;
-  font-family: Friz_Quadrata_Bold;
-  color: gold;
-  font-size: 80px;
+  font-family: Beaufort;
+  color: rgb(255, 217, 0);
+  font-size: 90px;
   text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.75),
     -3px 10px 12px rgba(0, 0, 0, 0.75), -2px -2px 0 goldenrod,
-    2px -2px 0 goldenrod, -2px 2px 0 goldenrod, 2px 2px 0 goldenrod;
+    2px -2px 0 goldenrod, -2px 2px 0 goldenrod, 2px 2px 0 goldenrod; 
 }
 .head {
   display: flex;
@@ -116,22 +144,22 @@ h1 {
   display: flex;
   box-shadow: 0px 2px 20px 1px rgb(0, 0, 0);
   border: solid 2px #af9767;
-
+  background-color: rgb(30, 35, 40, 0.70 );
   height: 80px;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-family: Friz_Quadrata_Bold;
+  font-family: Beaufort-bold;
   color: goldenrod;
   padding: 10px;
 }
 p {
-  font-size: 15px;
+  font-size: 18px;
   padding: 0px;
   margin: 0px;
-  text-decoration: underline;
+
   font-weight: bold;
-  font-family: Friz_Quadrata_Bold;
+  font-family: Beaufort-bold;
   color: goldenrod;
 }
 .question {
@@ -139,14 +167,17 @@ p {
 }
 .price {
   color: goldenrod;
-  font-family: Friz_Quadrata_Bold;
+  font-family: Beaufort-bold;
   
+}
+label{
+  font-size: 20px;
 }
 
 .stats_box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border: solid 2px #af9767;
   min-width: 680px;
@@ -154,12 +185,14 @@ p {
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 2px 20px 1px rgb(0, 0, 0);
+  background-color: rgb(30, 35, 40, 0.70 );
 }
 .interieur {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .row {
@@ -169,7 +202,7 @@ p {
   align-items: flex-start;
   /*color: goldenrod;*/
   flex-wrap: nowrap;
-  font-family: Friz_Quadrata_Bold;
+  font-family: Beaufort-bold;
   padding: 20px 0px;
 }
 .row1 {
@@ -229,7 +262,7 @@ p {
 .next {
   background-color: #1e2328;
   border: 2px solid #af9767;
-  font-family: Friz_Quadrata_Bold;
+  font-family: Beaufort-bold;
   color: gold;
 
   width: 100px;
@@ -249,7 +282,7 @@ p {
 .hint {
   background-color: #1e2328;
   border: 2px solid #af9767;
-  font-family: Friz_Quadrata_Bold;
+  font-family: Beaufort-bold;
   color: gold;
 
   width: 100px;
@@ -316,14 +349,15 @@ p {
 .autocom-box li:hover {
   background: #464a50;
 }
+/*
 @media (orientation: portrait) {
   html{
     background-image: none;
-    background-color: red;
+    background-color: ;
   }
   
 }
-
+*/
 
 
 .option_checkbox:checked ~ .option_image {
@@ -336,6 +370,7 @@ p {
   position: absolute;
   left: 15px;
   top: 15px;
+
 }
 #options{
   display: none;
@@ -345,15 +380,22 @@ p {
   top: 15px;
   left: 15px;
   z-index: 4;
+
+}
+#settings:hover {
+  transform: rotateZ(90deg);
 }
 
-.option_image img{
+#settings{
   width: 25px;
   height: auto;
   filter: contrast(100%);
   transition: filter 0.1s;
   position: absolute;
   z-index: 4;
+  transform: rotateZ(0deg);
+  transition-duration: 250ms;
+  transition-property: transform;
 }
 
 .switch_input {
@@ -443,7 +485,7 @@ input:checked + .slider:before {
   font-size: 50px;
   color: gold;
   text-align: center;
-  font-family: Friz_Quadrata_Bold;
+  font-family: Beaufort;
   text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.75),
   -3px 10px 12px rgba(0, 0, 0, 0.75), -2px -2px 0 goldenrod,
   2px -2px 0 goldenrod, -2px 2px 0 goldenrod, 2px 2px 0 goldenrod;
