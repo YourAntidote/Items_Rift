@@ -32,7 +32,7 @@
         
         <input type="checkbox" id="options" class="option_checkbox">     
 
-          <label class="option_image" for="options"><img src="./assets/img/options.png" id="settings"></label>
+          <label class="option_image none" for="options"><img src="./assets/img/options.png" id="settings"></label>
           <div class="ui_option none">
 
             <div class="inside-menu">
@@ -52,9 +52,9 @@
         <div class="head" style="width: 100%;">
 
           
-          <div class="head" style="width: 100%; transform: translateX(20px);">
+          <div class="head" style="width: 100%; transform: translateX(45px);">
             <img src=" " class="img"  />
-            <p class="interrogation" style="font-size: 50px; text-decoration: none; padding-left:10px;">?</p>
+            <img class="ping" src="./assets/Enemy_Missing_ping.webp">
           </div>
         </div>
 
@@ -71,79 +71,117 @@
       </div>
       
       <div class="prix">
-        <p>
-          What is the price?
-        </p>
+        <p>What is the price?</p>
         <div class="thePrice">
-          <input name="prix" type="radio" class="box no1" /><label style="padding-right: 20px" class="price no1">0</label>
-          <input name="prix" type="radio" class="box no2" /><label style="padding-right: 20px" class="price no2">0</label>
-          <input name="prix" type="radio" class="box no3" /><label style="padding-right: 20px" class="price no3">0</label>
-          <input name="prix" type="radio" class="box no4" /><label class="price no4">0</label>
+          <input name="prix" type="radio" class="box no1" id="price1"/><label for="price1" style="padding-right: 20px" class="price no1">0</label>
+          <input name="prix" type="radio" class="box no2" id="price2"/><label for="price2" style="padding-right: 20px" class="price no2">0</label>
+          <input name="prix" type="radio" class="box no3" id="price3"/><label for="price3" style="padding-right: 20px" class="price no3">0</label>
+          <input name="prix" type="radio" class="box no4" id="price4"/><label for="price4" class="price no4">0</label>
         </div>
       </div>
       <div class="stats_box">
-        <div>
-          <p class="question">
-            What are the stats? (mythic passive inlcude)
-          </p>
+        <div class="stats-box-question">
+          <p class="item-left" style="color: rgb(43, 177, 201);">Items left :</p>
+          <div class="question-question">
+          <p class="question" style="font-size: 25px;">What are the stats</p>
+            <div class="tooltip-container" style="padding-left: 10px;">
+              <img src="./assets/question-mark.png" alt="Question Mark Icon" class="question-mark-icon">
+              <div class="tooltip-text">
+                 Passive item stats 
+                 <br>are not included
+              </div>
+            </div>
+          </div>
+          <p class="streak" style="color: rgb(43, 177, 201);">Streak : 0</a>
         </div>
+
         <div class="interieur">
           <div class="row row1">
+
             <div>
-              <input class="check" type="checkbox" value="1"/><label for="checkbox" style="color: rgb(255, 133, 34)">Attack Damage</label>
+              <input value="1" class="check" type="checkbox" id="AD-checkbox"/><label for="AD-checkbox" style="color: rgb(255, 133, 34)">Attack Damage</label>
             </div>
+           
             <div style="padding-top: 10px">
-              <input value="2" class="check" type="checkbox"/><label for="checkbox" style="color: rgb(255, 231, 140)">Attack Speed</label>
+              <input value="2" class="check" type="checkbox" id="csc-checkbox"/><label for="csc-checkbox" style="color: rgb(255, 0, 0)">Critical Strike Chance</label>              
             </div>
+
             <div style="padding-top: 10px">
-              <input value="3" class="check" type="checkbox"/><label for="checkbox" style="color: rgb(233, 52, 27)">Critical Strike Chance</label>
-              
+              <input value="3" class="check" type="checkbox" id="attspeed-checkbox"/><label for="attspeed-checkbox" style="color: rgb(255, 231, 140)">Attack Speed</label>
             </div>
+
             <div style="padding-top: 10px">
-              <input value="4" class="check" type="checkbox"/><label for="checkbox" style="color: rgb(134, 24, 14)">Armor Pen/Lethality</label>
-            </div>
+              <input value="4" class="check" type="checkbox" id="lethality-checkbox" /><label for="lethality-checkbox" style="color: rgb(255, 90, 119)">Lethality</label>
+          </div>
+
             <div style="padding-top: 10px">
-              <input value="5" class="check" type="checkbox"/><label for="checkbox" style="color: rgb(211, 33, 77)">Lifesteal/OmniVamp</label>
-              
+              <input value="5" class="check" type="checkbox" id="armpen-checkbox"/><label for="armpen-checkbox" style="color: rgb(203, 76, 99)">Armor Penetration</label>
             </div>
+
+            <div style="padding-top: 10px">
+              <input value="6" class="check" type="checkbox" id="lifesteal-checkbox"/><label for="lifesteal-checkbox" style="color: rgb(211, 33, 77)">Lifesteal</label>
+            </div>
+
           </div>
 
           <div class="row row2">
+
             <div style="padding-left: 10px; padding-right: 10px">
-              <input class="check" value="a" type="checkbox"/><label for="checkbox" style="color: rgb(119, 110, 245)">Ability Power</label>
+              <input class="check" value="a" type="checkbox" id="ap-checkbox"/><label for="ap-checkbox" style="color: rgb(119, 110, 245)">Ability Power</label>
             </div>
+
             <div
               style="padding-top: 10px; padding-left: 10px; padding-right: 10px">
-              <input value="b" class="check" type="checkbox" /><label for="checkbox" style="color: rgb(18, 101, 173)">Mana</label>
+              <input value="b" class="check" type="checkbox" id="mana-checkbox"/><label for="mana-checkbox" style="color: rgb(34, 80, 232)">Mana</label>
             </div>
+
             <div
               style="padding-top: 10px; padding-left: 10px; padding-right: 10px">
-              <input value="c" class="check" type="checkbox" /><label for="checkbox" style="color: rgb(34, 156, 231)">Mana Regen</label>
+              <input value="c" class="check" type="checkbox" id="manaregen-checkbox"/><label for="manaregen-checkbox" style="color: rgb(34, 156, 231)">Mana Regen</label>
             </div>
+
             <div
               style="padding-top: 10px; padding-left: 10px; padding-right: 10px">
-              <input value="d" class="check" type="checkbox" /><label for="checkbox" style="color: rgb(174, 119, 206)">Magic Penetration</label>
+              <input value="d" class="check" type="checkbox" id="h&S-checkbox"/><label for="h&S-checkbox" style="color: rgb(96, 225, 143)">Heal & Shield Power</label>
             </div>
+
             <div
               style="padding-top: 10px; padding-left: 10px; padding-right: 10px">
-              <input value="e" class="check" type="checkbox" /><label for="checkbox" style="color: rgb(238, 234, 214)">Ability Haste</label>
+              <input value="e" class="check" type="checkbox" id="magicpen-checkbox"/><label for="magicpen-checkbox" style="color: rgb(174, 119, 206)">Magic Penetration</label>
             </div>
+
+            <div
+              style="padding-top: 10px; padding-left: 10px; padding-right: 10px">
+              <input value="f" class="check" type="checkbox" id="haste-checkbox"/><label for="haste-checkbox" style="color: rgb(214, 206, 191)">Ability Haste</label>
+            </div>
+
           </div>
+
           <div class="row row3">
-            <div><input class="check" type="checkbox" value="#"/><label for="checkbox" style="color: rgb(2  , 135, 12)">Health</label>
+
+            <div><input class="check" type="checkbox" value="#" id="health-checkbox"/><label for="health-checkbox" style="color: rgb(2  , 135, 12)">Health</label>
             </div>
+
             <div style="padding-top: 10px">
-              <input value="!" class="check" type="checkbox"/><label for="checkbox" style="color: rgb(30, 151, 92)">Health Regen</label>
+              <input value="$" class="check" type="checkbox" id="healthregen-checkbox"/><label for="healthregen-checkbox" style="color: rgb(30, 151, 92)">Health Regen</label>
             </div>
+
             <div style="padding-top: 10px">
-              <input value="?" class="check" type="checkbox"/><label for="checkbox" style="color: rgb(216, 182, 100)">Armor</label>
+              <input value="!" class="check" type="checkbox" id="armor-checkbox"/><label for="armor-checkbox" style="color: rgb(216, 182, 100)">Armor</label>
             </div>
+
             <div style="padding-top: 10px">
-              <input value="%" class="check" type="checkbox"/><label for="checkbox" style="color: rgb(95, 214, 242)">Magic Resist</label>
+              <input value="?" class="check" type="checkbox" id="magic-checkbox"/><label for="magic-checkbox" style="color: rgb(95, 214, 242)">Magic Resist</label>
             </div>
+
             <div style="padding-top: 10px">
-              <input value="$" class="check" type="checkbox"/><label for="checkbox" style="color: rgb(238, 234, 214)">Mouvement Speed</label>
+              <input value="%" class="check" type="checkbox" id="tenacity-checkbox"/><label for="tenacity-checkbox" style="color: rgb(132, 103, 255)">Tenacity</label>
             </div>
+
+            <div style="padding-top: 10px">
+              <input value="&" class="check" type="checkbox" id="speed-checkbox"/><label for="speed-checkbox" style="color: rgb(239, 231, 211)">Mouvement Speed</label>
+            </div>
+
           </div>
         </div>
       </div>
@@ -154,10 +192,10 @@
     <div class="nav"  >
       <button class="hint" style="z-index: 1">Hint</button>
       <img src="./assets/img/bouton.png" class="btn"style="z-index: 1"/>
-      <button class="next" style="z-index: 3;">Next</button>
+      <button class="next" style="z-index: 3;">Skip</button>
     </div>
 
-    <p class="rights" style="color: #fff; z-index: 1; text-decoration: none;">@YourAntidote - All rights reserved 2023</p>
+    <p class="rights" style="color: #fff; z-index: 1; text-decoration: none;">@YourAntidote - All rights reserved 2024</p>
   </body>
 
   <script src="./script.js"></script>
